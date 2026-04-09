@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-muted: #a3a3a3;
+  --color-border: #262626;
+  --color-accent: #3b82f6;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: #fff;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
