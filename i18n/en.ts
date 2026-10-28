@@ -8,8 +8,8 @@ export const en = {
   },
   hero: {
     name: 'Wenjing Zhang',
-    title: 'AI Product Manager | 9 Yrs Exp | Game / LLM / Agent',
-    description: 'AI Product Manager with 9 years of full-stack internet experience, currently at Oasis Games (Hong Kong) Refantasia project team. A hybrid "Engineer + PM" background, having independently defined and delivered 5 real AI products, and independently designed an AI Agent full-lifecycle development workflow system composed of 31 Claude Code Skills.',
+    title: 'AI Product Manager / AI Project Manager | 9 Yrs Exp | Agent / AIGC / Evaluation',
+    description: 'Engineer-turned AI product / project manager with 9 years in internet (frontend → backend → AI product). Currently AltFlow project lead at Huying Tech, owning an AI interactive short-drama platform end to end (script → video production → distribution, each usable standalone): proposed the IF branching scheme, defined the state_dag topology rules, and built a 25-set evaluation system as the release gate; grew the team from 1 to a peak of 10. Previously led 4 AI products for Refantasia (Google Play 500K+ downloads), and shipped 2 apps (both submitted to App Store review) with a multi-agent 0→1 product workflow.',
     email: 'wenuurrii@gmail.com',
     phone: '185-1317-7315',
     education: 'Xidian University',
@@ -52,28 +52,41 @@ export const en = {
     title: 'Experience',
     jobs: [
       {
+        company: 'Huying Tech · AltFlow',
+        role: 'Senior AI PM → AI Project Manager (AltFlow Project Lead)',
+        date: '2026.04 – Present',
+        desc: 'Owned AltFlow from kickoff to launch with a "script / video production / distribution, each usable standalone" direction; reported to the CEO and joined investor conversations; showcased at the June AltNext conference (~200 sign-ups that day). Connected interactive script → free canvas → editing desk → interactive publishing → mini-program / app, authored PRDs for Guided / Co-create / Free modes and the player; 4 main flows in closed beta. Set a Go/No-Go release gate (eval admission, no golden-set regression, zero P0/P1, tracking verified); 70 acceptance items across v1.1 / v1.2, 64 tracking events governed. Grew the team from 1 to a peak of 10; during engineering shortages led PMs and ops to ship via AI coding (product-side PRs 33% of the repo, 59% in August); 219 beta applications, ~100 creators coached, 233 pieces of feedback.'
+      },
+      {
         company: 'Oasis Games (Hong Kong) · Refantasia Team',
-        role: 'AI Product Manager',
-        date: '2020.08 – Present',
-        desc: 'Led Refantasia AI productization. Independently delivered the Growth / Cost-Reduction / Insight Trio + CSP deep case (4 AI products), plus an AI Agent full-lifecycle workflow system composed of 31 Claude Code Skills, against production data across multi-server, 9 languages, and 35 business tables. Previously served at the same company as Frontend Lead, then Game Panel Backend / GameSDK Dev, leading Game Panel from 0 to 1. Product backing: Refantasia (Google Play 500K+ downloads, 3 years in operation).'
+        role: 'AI Product Manager (2023 – 2026) / Frontend Lead · Backend Dev (2020 – 2023)',
+        date: '2020.08 – 2026.01',
+        desc: 'Identified four operations pain points (churn attribution, hand-built event JSON, data queries queued on engineering, Excel scheduling), self-taught LLM / RAG / Agent / ComfyUI and built PoCs, then was appointed AI PM; delivered PRD, evaluation, gray release and A/B testing for 4 AI products on production data across multiple servers, 9 languages and 35 business tables, aligning engineering, ops, support, localization and art. Earlier led the frontend team, built the Game Panel ops backend from 0 to 1, and worked on GameSDK. Product backing: Refantasia (Google Play 500K+ downloads).'
       },
       {
         company: 'ByteDance',
         role: 'Frontend Engineer',
         date: '2019.10 – 2020.08',
-        desc: 'Participated in the construction of legal-related systems, handled complex process-oriented business requirements. Collaborated across backend, legal, and product teams — sharpening process understanding and cross-department communication for large internal systems, laying the business-abstraction foundation for later transition to AI PM.'
+        desc: 'Owned frontend design and launch of process-heavy legal systems, collaborating with backend, legal and product; built skills in process abstraction and cross-team collaboration.'
       },
       {
         company: 'Columbus Era Tech / Aiqin',
         role: 'Frontend Engineer',
         date: '2017.06 – 2019.09',
-        desc: 'Responsible for business frontend development and iterative delivery. Participated in the 0 to 1 frontend engineering setup and launch of multiple products. Built up early engineering capability and established a complete engineer perspective on product, design, and backend collaboration.'
+        desc: 'Built frontend engineering and shipped iterations for several 0-to-1 products, forming a full engineering perspective.'
       }
     ]
   },
   projects: {
     title: 'Core AI Projects',
     items: [
+      {
+        name: 'AltFlow · AI Interactive Short-Drama Platform (0→1, Script → Video → Distribution)',
+        tags: ['Agent', 'Topology Algorithm', 'Eval Sets', 'Release Gate'],
+        bg: 'Making interactive short dramas meant a long, fragmented toolchain: newcomers could not build branches and world-lines; writers facing a blank LLM chat could not control branches, stats and multiple endings, and output never reached production; model or prompt changes had no admission criteria.',
+        solution: 'Designed Guided / Co-create / Free modes by creator skill (Guided yields a full interactive script in six steps); proposed the IF branching scheme and defined state_dag topology rules (world-line split / merge, micro-branches, fail lines, stat gates, conditional endings) with automatic structure validation; free canvas + interactive publishing desk + player state machine link production and distribution; 25 eval sets × 4 layers with 93 scoring rules, combining human blind review, deterministic checks and LLM judges; led a four-platform architecture (creator workbench / agent runtime / model eval platform / reverse-annotation hub).',
+        result: 'Script analysis rated "10 out of 10" by coached users; 233 feedback items attributed into 6 categories, 35 turned into requirements; evals pinpointed 2 hard failures of the Free-mode agent, fixed with a new tool and a regression gate, making model selection and prompt iteration data-driven.'
+      },
       {
         name: 'AI Operations Content Copilot (Text + Image Dual Channel)',
         tags: ['Cost Reduction', 'RAG + Agent', 'ComfyUI v3 + Self-trained SDXL LoRA', 'Next.js 15'],
